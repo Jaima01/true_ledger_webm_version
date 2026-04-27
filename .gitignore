@@ -1,15 +1,112 @@
+# ──────────────────────────────────────────────
+# OS & Editor junk
+# ──────────────────────────────────────────────
 .DS_Store
+Thumbs.db
+desktop.ini
 
-# Local environment files
+# VS Code
+.vscode/
+*.code-workspace
+
+# JetBrains IDEs
+.idea/
+*.iml
+
+# ──────────────────────────────────────────────
+# Environment & secrets
+# ──────────────────────────────────────────────
 .env
 **/.env
+.env.local
+.env.*.local
+*.pem
+*.key
 
-# Python caches and virtual environments
+# ──────────────────────────────────────────────
+# Node / JavaScript / TypeScript
+# ──────────────────────────────────────────────
+node_modules/
+**/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+.npm/
+.yarn/
+
+# Build outputs
+dist/
+**/dist/
+build/
+**/build/
+.next/
+.nuxt/
+.svelte-kit/
+out/
+
+# Cache & temp
+.cache/
+**/.cache/
+.turbo/
+**/.turbo/
+*.tsbuildinfo
+
+# ──────────────────────────────────────────────
+# Python
+# ──────────────────────────────────────────────
 __pycache__/
 **/__pycache__/
 *.pyc
 *.pyo
 *.pyd
+*.pdb
 .venv/
 venv/
+env/
 backend/venv/
+*.egg-info/
+dist/
+*.egg
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+coverage.xml
+
+# ──────────────────────────────────────────────
+# Archives & compressed files
+# ──────────────────────────────────────────────
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.tar.bz2
+*.tar.xz
+*.rar
+*.7z
+*.gz
+*.bz2
+
+# ──────────────────────────────────────────────
+# Logs & diagnostics
+# ──────────────────────────────────────────────
+logs/
+*.log
+*.log.*
+
+# ──────────────────────────────────────────────
+# Docker
+# ──────────────────────────────────────────────
+.docker/
+
+# ──────────────────────────────────────────────
+# Misc
+# ──────────────────────────────────────────────
+*.swp
+*.swo
+*~
+.tmp/
+tmp/
