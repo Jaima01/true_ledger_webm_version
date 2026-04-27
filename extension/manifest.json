@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Hover URL Extractor",
+  "version": "1.0.0",
+  "description": "Extracts YouTube and X/Twitter content URLs on hover.",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.youtube.com/*",
+        "*://*.twitter.com/*",
+        "*://*.x.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
