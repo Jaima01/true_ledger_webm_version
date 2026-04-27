@@ -40,7 +40,7 @@
   "content_scripts": [
     {
       "js": [
-        "assets/main.ts-Bl13ekto.js"
+        "assets/main.ts-Cb-3rBxi.js"
       ],
       "matches": [
         "https://x.com/*",
@@ -63,7 +63,7 @@
       ],
       "resources": [
         "icons/icon6.png",
-        "assets/main.ts-Bl13ekto.js"
+        "assets/main.ts-Cb-3rBxi.js"
       ],
       "use_dynamic_url": false
     }

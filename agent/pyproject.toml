@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "deepfake-grid-analyzer"
+version = "0.1.0"
+description = "Model-agnostic deepfake batch agent service for browser-extension pipelines"
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+  "Pillow>=10.4,<12",
+  "google-genai>=1.30,<2",
+  "python-dotenv>=1.0,<2",
+  "tenacity>=9.0,<10",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.3,<9"
+]
+
+[project.scripts]
+deepfake-agent = "deepfake_grid_analyzer.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

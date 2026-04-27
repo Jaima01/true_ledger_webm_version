@@ -1,1 +1,15 @@
 .DS_Store
+
+# Local environment files
+.env
+**/.env
+
+# Python caches and virtual environments
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+backend/venv/
